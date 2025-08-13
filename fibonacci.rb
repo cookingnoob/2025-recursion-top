@@ -16,7 +16,14 @@ end
 fibs_iterative(8)
 
 def fibs_rec(n)
+  if n == 0
+    return 0
+  elsif n == 1
+    return 1
+  else
+    'recursive magic'
+  end
   
 end
 
-fibs_rec
+p fibs_rec(8)
