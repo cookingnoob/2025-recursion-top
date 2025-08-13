@@ -3,10 +3,14 @@ def fibsIterative(number)
   answer = []
   
   while i < number
-    puts i  
+    if answer.length < 2
+        answer.push(i)
+    else
+      answer.push(answer[i - 2] + answer[i - 1])
+    end
     i += 1
   end
-
+  p answer
 end
 
 fibsIterative(8)
