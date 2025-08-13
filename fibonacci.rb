@@ -1,5 +1,12 @@
-def fibs(number)
-  p number
+def fibsIterative(number)
+  i = 0
+  answer = []
+  
+  while i < number
+    puts i  
+    i += 1
+  end
+
 end
 
-fibs(8)
+fibsIterative(8)
