@@ -1,4 +1,4 @@
-def fibsIterative(number)
+def fibs_iterative(number)
   i = 0
   answer = []
   
@@ -13,4 +13,10 @@ def fibsIterative(number)
   answer
 end
 
-fibsIterative(8)
+fibs_iterative(8)
+
+def fibs_rec(n)
+  
+end
+
+fibs_rec
