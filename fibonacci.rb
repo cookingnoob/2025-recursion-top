@@ -10,7 +10,7 @@ def fibsIterative(number)
     end
     i += 1
   end
-  p answer
+  answer
 end
 
 fibsIterative(8)
