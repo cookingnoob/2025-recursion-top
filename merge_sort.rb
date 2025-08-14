@@ -3,6 +3,9 @@ def merge(left, right, left_length, right_length)
   j = 0
   k = 0
   ans = []
+  
+  while i < left_length && j < right_length
+  end
 end
 
 def merge_sort(array)
