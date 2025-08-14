@@ -14,6 +14,18 @@ def merge(left, right, left_length, right_length)
     end
     k += 1
   end
+
+  while i < left_length
+    ans[k] = left[i]
+    i += 1
+    k += 1
+  end
+
+  while j < right_length
+    ans[k] = right[j]
+    j += 1
+    k += 1
+  end
   ans
 end
 
@@ -33,4 +45,4 @@ def merge_sort(array)
   merge(left, right, left.length, right.length)
 end
 
-merge_sort([3, 2, 1, 13, 8, 5, 0, 1])
+p merge_sort([3, 2, 1, 13, 8, 5, 0, 1])
