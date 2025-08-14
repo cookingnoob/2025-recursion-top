@@ -1,6 +1,8 @@
 def merge(left, right, left_length, right_length)
-  p "left: #{left} length #{left_length}"
-  p "right: #{right} length #{right_length}"
+  i = 0
+  j = 0
+  k = 0
+  ans = []
 end
 
 def merge_sort(array)
