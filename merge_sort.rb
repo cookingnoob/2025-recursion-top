@@ -5,7 +5,16 @@ def merge(left, right, left_length, right_length)
   ans = []
   
   while i < left_length && j < right_length
+    if left[i] > right[j]
+      ans[k] = right[j]
+      j += 1
+    else
+      ans[k] = left[i]
+      i += 1
+    end
+    k += 1
   end
+  ans
 end
 
 def merge_sort(array)
