@@ -1,13 +1,16 @@
 def merge_sort(array)
+  p "incoming array: #{array}"
+  if array.length == 1
+    return array
+  end
   
   middle = array.length / 2
 
   # sort left half
-  left = array[0..middle - 1]
+  left = merge_sort(array[0..middle - 1])
 
   # sort right half
-  right = array[middle..-1]
-
+  right = merge_sort(array[middle..-1])
   # merge
 
 end
